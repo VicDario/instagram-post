@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.post {
+    width: 400px;
+    border: 1px solid black;
+    margin-left: calc(50% - 200px);
+    margin-top: 50px;
+}
+
+.post .post_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.post .post_header--info {
+    display: flex;
+    align-items: center;
+}
+
+.post .post_header--info .post_header--img svg{
+    width: 20px;
+    height: 20px;
+}
+
+.post .post_header--info .post_header--text {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+.post .post_header--points svg {
+    width: 10px;
+    height: 20px;
+}
+
+.post .post_header--info .post_header--text .post_header--title {
+    font-weight: bold;
+}
+
+.post .post_img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.post .post_body .post_body--actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.post .post_body .post_body--actions svg {
+    width: 20px;
+    height: 20px;
+}
+.post .post_body .post_body--actions svg:not(:first-child) {
+    margin-left: 10px;
+}
+
+.post .post_body {
+    font-size: 1.2rem;
+}
+
+.post .post_body .post_body--text {
+    padding: 0px 10px 10px 10px;
+}
+
+.post .post_body .post_body--text .post_body--info {
+    margin-bottom: 10px;
+}
+
+.post .post_body .post_body--text .post_body--description {
+    text-align: justify;
+}
